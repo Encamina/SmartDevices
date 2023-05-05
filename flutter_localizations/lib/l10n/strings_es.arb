@@ -1,0 +1,10 @@
+{
+    "titleApp": "Traducciones",
+    "@titleApp": {
+        "description": "El título de la aplicación"
+    },
+    "helloWorld": "Hola Mundo!",
+    "@helloWorld": {
+        "description": "El saludo convencional del programador novato."
+    }
+}
