@@ -21,11 +21,12 @@ class MyApp extends StatelessWidget {
         AppLocalizations.delegate,
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate],
-       supportedLocales: const [      
-      Locale('es', 'ES'), //Español de españa
-      Locale('en'),       //Inglés, cualquier país
-    ],  
+        GlobalCupertinoLocalizations.delegate
+      ],
+      supportedLocales: const [
+        Locale('es', 'ES'), //Español de españa
+        Locale('en'), //Inglés, cualquier país
+      ],
       home: const MyHomePage(title: 'Translations demo'),
     );
   }
@@ -49,14 +50,15 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
-           CalendarDatePicker(
-                initialDate: DateTime.now(),
-                firstDate: DateTime(1900),
-                lastDate: DateTime(2100),
-                onDateChanged: (value) {}),
+          CalendarDatePicker(
+              initialDate: DateTime.now(),
+              firstDate: DateTime(1900),
+              lastDate: DateTime(2100),
+              onDateChanged: (value) {}),
           Text(AppLocalizations.of(context)!.helloWorld),
+          Text(AppLocalizations.of(context)!.activityAddedComics(100)),
         ],
-      ),      
+      ),
     );
   }
 }

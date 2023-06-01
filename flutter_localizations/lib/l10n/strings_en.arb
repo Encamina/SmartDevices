@@ -1,10 +1,20 @@
 {
   "titleApp": "Translations!",
   "@titleApp": {
+    "type": "text",
     "description": "The title of the app"
   },
   "helloWorld": "Hello World!",
   "@helloWorld": {
+    "type": "text",
     "description": "The conventional newborn programmer greeting"
+  },
+  "activityAddedComics": "Has {p0} new comics",
+  "@activityAddedComics": {
+    "type": "text",
+    "placeholders": {
+      "p0": {
+      }
+    }
   }
 }
